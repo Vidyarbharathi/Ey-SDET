@@ -1,0 +1,92 @@
+Today's agenda
+============
+Implicit wait
+findElement and findElements
+Select class
+==================================
+
+Basic Xpath
+=========
+What is? -Xml path--uses tag name to locate the element
+When to use 
+
+id --not unique
+class and name  -duplicated
+right attribute to locate the element
+
+Absolute xpath
+=============
+	starts with 
+(/html/body/div[2]/div/div)[3]-long path-not recommended
+
+Relative xpath
+========
+
+starts with
+ //tagname[@attribute name='attribute value']
+
+Attribute based xpath
+================
+//input[@type='password']-password webelement
+
+
+
+
+https://qeaglecom-my.sharepoint.com/:v:/g/personal/vidyabharathi_ramachandran_testleaf_com/ER0ySuS8C5NFo9iIanvBp2EBQSkgnQKnXotRLMxFziRROg?e=nzgSk2
+https://qeaglecom-my.sharepoint.com/:v:/g/personal/vidyabharathi_ramachandran_testleaf_com/EScq3Vcot01GnC9W96pfpOwBKlHiW66eAKRClBOkQ5_EYw?e=SD75AA
+
+
+
+
+
+
+
+
+
+
+
+classroom:1
+Edit Lead
+		  1. Launch URL "http://leaftaps.com/opentaps/control/login"
+		  2. Enter UserName and Password Using Id Locator
+		  3. Click on Login Button using Class Locator
+		  4. Click on CRM/SFA Link
+		  5. Click on Leads Button
+		  6. Click on Create Lead 
+		  7. Enter CompanyName Field Using id Locator
+		  8. Enter FirstName Field Using id Locator
+		  9. Enter LastName Field Using id Locator
+		  10. Enter FirstName(Local) Field Using id Locator
+		  11. Enter Department Field Using any Locator of Your Choice
+		  12. Enter Description Field Using any Locator of your choice 
+		  13. Enter your email in the E-mail address Field using the locator of your choice
+		  14. Fill all the dropdowns with the help of select class and methods
+		  15.Get all the options of stateprovince
+		  16. Click on Create Button
+                		  17. Click on edit button
+                 		  18. Clear the Description Field using .clear()
+		  19. Fill ImportantNote Field with Any text
+		  20. Click on update button 
+		  21. Get the Title of Resulting Page. 
+
+
+
+
+
+
+
+
+
+
+
+
+Classroom:
+Classroom Exercise
+1) Launch chrome and go to http://www.leafground.com/pages/Link.html
+2) Get all the links (using findElements)
+3) Click on the first link (using get method with index as 0)
+4) Print the title
+5) Navigate back on the browser (driver.navigate().back())
+6) Get all the links again (using findElements)
+7) Print the count of the links (size)
+8) print the href value (getAttribute) of the second link
