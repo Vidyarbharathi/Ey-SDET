@@ -1,0 +1,145 @@
+Agenda:
+
+Basic Xpath:
+==========
+
+Absolute Xpath--Long way to find WebElement
+Relative Xpath--Recommend short way to locate the webElement
+=============
+
+Attribute based xpath
+================
+//tagname[@attribute='value']
+//input[@id='createLeadForm_companyName']
+
+Text based xpath
+=============
+//tagname[text()='text value']
+//label[text()='Username']
+//a[text()='Leads']
+
+Partial attribute/text based xpath
+========================
+
+//tagname[contains(@attribute,'attributevalue')]
+//input[contains(@class,'decorative')]-Attribute xpath
+//a[contains(text(),'CRM')]-textbased
+
+if the text having spaces
+===========
+//tagname[normalize-space(@attribute/text='value')]
+
+starts-with
+//tagname[starts-with(text='value')]
+
+
+Collection based -to find multiple matches
+=================================
+
+(realative xpath)[index]
+(//input[@class='inputLogin'])[2]
+
+
+Advanced Xpath-Relationship based /Axes xpath
+===================================
+Parent -child xpath
+===========
+(relative xpath of parent)/child -tagname (relative xpath)-optional
+
+//div[@class='x-grid3-cell-inner x-grid3-col-firstName']/a
+
+Child -Parent xpath
+==============
+(relative xpath of child)/parent::tagname(relative path) -optional
+//a[text()='Hari']/parent::div
+
+follow up-assignments:
+
+Delete Lead:
+		1	Launch the browser
+		2	Enter the username
+		3	Enter the password
+		4	Click Login
+		5	Click crm/sfa link
+		6	Click Leads link
+		7	Click Find leads
+		8	Click on Phone
+		9	Enter phone number
+		10	Click find leads button
+		11	Capture lead ID of First Resulting lead
+		12	Click First Resulting lead
+		13	Click Delete
+		14	Click Find leads
+		15	Enter captured lead ID
+		16	Click find leads button
+		17	Verify message "No records to display" in the Lead List. This message confirms the successful deletion
+		18	Close the browser
+
+Duplicate Lead
+=========
+		/*http://leaftaps.com/opentaps/control/main
+ 
+		1	Launch the browser
+		2	Enter the username
+		3	Enter the password
+		4	Click Login
+		5	Click crm/sfa link
+		6	Click Leads link
+		7	Click Find leads
+		8	Click on Email
+		9	Enter Email
+		10	Click find leads button
+		11	Capture name of First Resulting lead
+		12	Click First Resulting lead
+		13	Click Duplicate Lead
+		14	Verify the title as 'Duplicate Lead'
+		15	Click Create Lead
+		16	Confirm the duplicated lead name is same as captured name
+		17	Close the browser 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classroom
+=========
+1. Load url "https://acme-test.uipath.com/login"
+2. Enter email as "kumar.testleaf@gmail.com"
+3. Enter Password as "leaf@12"
+4. Click login button
+5. Get the title of the page and print
+6. Click on Log Out
+7. Close the browser 
+
+=========
+1.Load the url https://www.instagram.com/accounts/emailsignup/
+2.Enter the mobile number
+3.Clear the field and enter the mail id
+4.Enter the first name
+5.Enter the username
+6.Enter the password
+7.close the browser
+
+=======================
+http://www.leafground.com/pages/Edit.html
+-->follow the label given to the text field to automate
