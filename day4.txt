@@ -1,0 +1,157 @@
+Agenda
+======
+normalized space xpath
+//a[text()[normalize-space() = 'CRM/SFA']]
+
+Axes Xpath
+
+Parent -child xpath
+===========
+(relative xpath of parent)/child -tagname (relative xpath)-optional
+
+//div[@class='x-grid3-cell-inner x-grid3-col-firstName']/a
+
+Child -Parent xpath
+==============
+(relative xpath of child)/parent::tagname(relative path) -optional
+//a[text()='Hari']/parent::div
+//a[text()='Hari']/..
+//a[contains(text(),'CRM')]/../..-->to moves one level up
+
+GrandParent-Grandchild 
+===========
+(relative xpath)//tagname
+//div[@id='button']//img
+
+GrandChild-GrandParent 
+===================
+(relative xpath)/ancestor::tagname
+//a[contains(text(),'CRM')]/ancestor::div
+
+
+<p>
+   <label>
+  <input>
+<p>
+   <label>
+   <input>
+<p>
+   <label>
+
+============
+sibiling Relationship
+================
+Younger -Elder Sibling
+(relative xpath)/preceding-sibling::tagname
+//input[@id='username']/preceding-sibling::label
+
+Elder to younger sibling
+==============
+(relative xpath)/following-sibling::tagname
+//label[@for='password']/following-sibling::input
+
+Cousin-->Younger to Elder
+======================
+(relative xpath)/preceding::tagname
+
+//label[@for='password']/preceding::input
+
+
+Elder to Younger
+===========
+(relative xpath)/following::tagname
+//label[@for='username']/following::label
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+classroom:1
+========			 
+ 1. Launch URL "https://www.myntra.com/"		 
+ 2. Maximize the browser		 
+ 3. Search 'Shirt' in the Search bar [find it using Xpath]		 
+ 4. Search for U.S Polo under brand
+ 5. Check U.S Polo Assn under brand		  
+ 6. Sort by 'what's new'		 
+ 7. Get all the prices of the shirts available and store it in a List	
+ 8. Print all the prices of the Shirts
+
+classroom:2
+==========
+1. Login to https://login.salesforce.com
+2. Click on toggle menu button from the left corner
+3. Click view All 
+4. Click Service Console from App Launcher
+5. Select New Contact from the Contacts dropdown
+6. Select Salutation
+7.Enter Firstname
+8. Enter Lastname
+9. Enter the phone number
+10. Click search on Account number 
+11. Enter the Account number
+12. Select the Rating
+13. Click on Save 
+14. Verify the toaster message
+15.Enter the phone number
+16.Click on Save
+17.Verify the Toaster message
+
+
+
+Classroom :3
+==========
+1. Login to https://login.salesforce.com
+2. Click on toggle menu button from the left corner
+3. Click view All 
+4. Click Service Console from App Launcher
+5. Select created Contact from the Contacts dropdown
+6. Edit the accountName of first resulting Contact 
+7.Click on save
+8.Verify the Toaster Message
+	
