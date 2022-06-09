@@ -1,0 +1,36 @@
+Agenda-WebDriver methods
+=====================
+Verification methods
+
+Browser Verification
+Element Verification
+
+
+Browser Level Verification:
+=====================
+getTitle-->to verify the title of the webpage
+getCurrentUrl-->url of the current active page
+get pageSource-->Dom Elements  into the console
+
+
+
+Element Level Verification:
+=====================
+getText()-->verify the text
+
+getAttribute("id")-->to get the attribute value from the dom
+
+getAttribute("textContent")-->when the getText is not retreiving the text out of the dom
+
+getAttribute("value")--> get typed text from the WebElement
+
+getLocation->to identify the position of the webElement ->x,y cocordinates
+
+getSize()-->get the size of the WebElement
+
+to get the screenshot
+
+		File screenshotAs = driver.getScreenshotAs(OutputType.FILE);
+		File destination=new File("./snap/shot.png");
+		FileUtils.copyFile(screenshotAs, destination);
+		
