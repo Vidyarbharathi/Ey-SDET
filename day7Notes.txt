@@ -1,0 +1,58 @@
+Agenda
+
+Frames and shadow dom
+===================
+
+Frames:
+======
+
+DOM inside a DOM
+
+SwitchTo
+
+frame-floating
+iframe-->inline frame
+
+1.Find the frame element
+2.SwitchTo method to navigate into the frame
+3.hit the required webelement
+3 ways
+frame(index)
+frame(string id/name)
+frame(WebElement)
+
+
+========================
+
+Shadow dom:
+==========
+
+Shadow host-->normal node of the dom
+	|
+	Shadow root-->parent nodes
+		|	
+		Child nodes
+To handle shadow dom,
+pre -requisite are 
+   dependency added to pom.xml
+
+<dependency>
+    <groupId>io.github.sukgu</groupId>
+    <artifactId>automation</artifactId>
+    <version>0.1.4.1</version>
+</dependency>
+
+Shadow-class to be instantiated
+
+
+
+
+
+
+
+
+
+
+
+
+
