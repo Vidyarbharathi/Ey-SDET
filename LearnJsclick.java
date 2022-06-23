@@ -35,6 +35,21 @@ public class LearnJsclick {
 		 */
 		
 		driver.executeScript("document.body.style.zoom= '0%'", "");
+		Robot robot = new Robot();
+
+for (int i = 0; i < 3; i++) {
+robot.keyPress(KeyEvent.VK_CONTROL);
+robot.keyPress(KeyEvent.VK_ADD);
+robot.keyRelease(KeyEvent.VK_ADD);
+robot.keyRelease(KeyEvent.VK_CONTROL);
+}
+
+
+ro.keyPress(KeyEvent.VK_CONTROL);
+ro.keyPress(KeyEvent.VK_SUBTRACT);
+ro.keyRelease(KeyEvent.VK_SUBTRACT);
+ro.keyRelease(KeyEvent.VK_CONTROL);
+
 		
 	}
 
