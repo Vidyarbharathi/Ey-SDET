@@ -33,20 +33,7 @@ public class LearnCDPEmulateNetworkCondition {
 		DevTools devTools = driver.getDevTools();
 		devTools.createSession();
 				
-		devTools.send(Log.enable());
-		devTools.addListener(Log.entryAdded(), logEntry-> {
-		System.out.println(logEntry.getText());
-		System.out.println(logEntry.getLevel());
-		System.out.println(logEntry.getCategory());
-		System.out.println(logEntry.getSource());
-		
-		
-		
-		});
-		
-		GetVersionResponse bv = devTools.send(Browser.getVersion());
-		System.out.println(bv.getUserAgent());
-		
+		devTools.send(Network.emulateNetworkConditions(false, 10, 1500, 2000, Optional.of(ConnectionType.WIFI)));
 		driver.get("http://leaftaps.com/opentaps/control/main");		
 		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");			
 		WebElement pwd = driver.findElement(By.id("password"));
@@ -55,15 +42,8 @@ public class LearnCDPEmulateNetworkCondition {
 		String title = driver.getTitle();
 		System.out.println(title);
 		
-		List<Metric> send = devTools.send(Performance.getMetrics());
-	/*	for (Metric metric : send) {
-			System.out.println(metric.getName().toString()+ "=>" +metric.getValue());*/
-		
-		send.forEach(metric-> 
-		    System.out.println(metric.getName()+ "=>" +metric.getValue()));
-		
-		}
+	
 		
 	}
-
+}
 
