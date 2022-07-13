@@ -1,0 +1,46 @@
+Assignment- Service now Application
+================================
+Create new incident
+1. Launch ServiceNow application
+2. Login with valid credentials
+3. Enter Incident in filter navigator and press enter
+4. Click on Create new option and fill the manadatory fields
+5. Verify the newly created incident
+******************************************
+2.Update existing incident
+====================
+1. Launch ServiceNow application
+2. Login with valid credentials 
+3. Enter Incident in filter navigator and press enter
+4. Search for the existing incident and click on the incident
+5.Click the Caller search and search for System in the look up window 
+6.Select System Administrstor
+5. Update the incidents with Urgency as High and State as In Progress
+6. Verify the priority and state 
+************************************************
+
+3.Delete the incident
+==================
+1. Launch ServiceNow application
+2. Login with valid credentials 
+3. Enter Incident in filter navigator and press enter"
+4. Search for the existing incident and navigate into the incident
+5. Delete the incident
+6. Verify the deleted incident
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
