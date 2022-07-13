@@ -1,5 +1,10 @@
 Assignment- Service now Application
 ================================
+Credentials:
+https://dev85018.service-now.com/nav_to.do
+admin
+SNow@321
+
 Create new incident
 1. Launch ServiceNow application
 2. Login with valid credentials
